@@ -4,7 +4,7 @@ from uuid import uuid4
 # Create your models here.
 
 
-class Books(model.Models):
+class Books(models.Model):
     id_book = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     titile = models.CharField(max_length=255)
     autor = models.CharField(max_length=255)
